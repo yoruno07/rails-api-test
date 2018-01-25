@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Users", type: :request do
   describe "GET /users" do
-    before { @users = FactoryGirl.create_list(:user, 2) }
+    before { @users = FactoryBot.create_list(:user, 2) }
     it "index" do
       get users_path
 
