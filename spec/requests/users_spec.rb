@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Users", type: :request do
   describe "GET /users" do
     before { @users = FactoryBot.create_list(:user, 2) }
-    it "index" do
+    it "APIでuser一覧を取得する", autodoc: true do
       get users_path
 
     # ステータスコードのチェック
